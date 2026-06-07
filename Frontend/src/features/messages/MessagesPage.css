@@ -1,0 +1,57 @@
+.messages-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.messages-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+}
+
+.messages-container {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  overflow: hidden;
+  height: calc(100vh - 140px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .messages-container {
+    grid-template-columns: 1fr;
+    height: calc(100vh - 120px);
+  }
+
+  .messages-sidebar {
+    display: none;
+  }
+
+  /* Show sidebar only when no conversation is active on mobile */
+  .messages-container.no-active .messages-sidebar {
+    display: flex;
+  }
+
+  .messages-container.no-active .messages-panel {
+    display: none;
+  }
+
+  .messages-panel-back {
+    display: flex;
+  }
+
+  .messages-panel-header {
+    padding: 10px 12px;
+  }
+
+  .message-bubble {
+    max-width: 85%;
+  }
+}

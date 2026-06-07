@@ -1,0 +1,71 @@
+.comment-section {
+  padding: 12px 16px;
+  background: var(--bg-card);
+}
+
+/* Composer (top-level comment input) */
+.comment-composer {
+  margin-bottom: 12px;
+}
+
+.comment-composer-textarea {
+  width: 100%;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  resize: vertical;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.comment-composer-textarea:focus {
+  border-color: #1e40af;
+  box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+}
+
+.comment-composer-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.comment-composer-btn {
+  padding: 6px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.comment-composer-btn:hover {
+  background: #1e3a8a;
+}
+
+.comment-composer-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Loading / empty states */
+.comment-section-loading,
+.comment-section-empty {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 12px 0;
+}
+
+/* Comment list */
+.comment-list {
+  margin-top: 4px;
+}

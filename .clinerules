@@ -1,0 +1,2 @@
+- If information is missing: Ask the user a question. STOP. Do not make assumptions. Do not continue until the user answers.
+- Assume PowerShell 5.1. Use newline-separated commands instead of chaining operators.

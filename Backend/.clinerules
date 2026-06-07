@@ -1,0 +1,4 @@
+# Backend Rules
+
+- Do NOT create database migrations manually. Simply update the models and I will create the migrations.
+- Do NOT run database migrations manually. The database runs inside Docker — migrations are handled outside of this project (e.g., via Docker container commands). Never execute `flask db upgrade` or similar migration commands from the host.
