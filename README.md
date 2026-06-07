@@ -55,7 +55,7 @@ On first launch, SQLAlchemy automatically creates all database tables. Visit the
 docker compose -f Infrastructure/docker/docker-compose.yml ps
 ```
 
-You should see `thewebsite_postgres-1`, `thewebsite_backend-1`, `thewebsite_frontend-1`, `thewebsite_nginx-1`, and `thewebsite_pgadmin-1` all with a status of `Up`.
+You should see `docker_postgres-1`, `docker_backend-1`, `docker_frontend-1`, `docker_nginx-1`, and `docker_pgadmin-1` all with a status of `Up`.
 
 ---
 
