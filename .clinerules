@@ -1,2 +1,3 @@
 - If information is missing: Ask the user a question. STOP. Do not make assumptions. Do not continue until the user answers.
 - Assume PowerShell 5.1. Use newline-separated commands instead of chaining operators.
+- When running npm commands in a subdirectory (e.g., Frontend/), do NOT use `cd dir && npm ...` — this does not work in PowerShell 5.1. Instead, use the `--prefix` flag: `npm --prefix "c:\full\path\to\subdirectory" <command>`. For example: `npm --prefix "c:\Users\brian\Desktop\Programming\Python\TheWebsite\Frontend" run build`.
